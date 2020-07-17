@@ -3,7 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokceFramework.Core", "GokceFramework.Core\GokceFramework.Core.csproj", "{878D4388-3752-4141-B313-1FDF9102B267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokceFramework.Northwind.Entities", "GokceFramework.Northwind.Entities\GokceFramework.Northwind.Entities.csproj", "{AACD63E6-C9BA-4B66-80F0-BAAD26C402D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokceFramework.Norhwind.DataAccess", "GokceFramework.Norhwind.DataAccess\GokceFramework.Norhwind.DataAccess.csproj", "{2F94B4D2-BD56-4D8D-A715-85C8F7423448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokceFramework.Northwind.Business", "GokceFramework.Northwind.Business\GokceFramework.Northwind.Business.csproj", "{E4A58FF3-8617-420F-8E0A-E4DB5B50B684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokceFramework.DataAccess.Tests", "GokceFramework.DataAccess.Tests\GokceFramework.DataAccess.Tests.csproj", "{370890A2-FBF0-4851-8CFD-C43851C0C83A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokceFramework.Business.Tests", "GokceFramework.Business.Tests\GokceFramework.Business.Tests.csproj", "{4500C144-05C9-4C70-94AE-1CC0EE02E961}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{878D4388-3752-4141-B313-1FDF9102B267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878D4388-3752-4141-B313-1FDF9102B267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878D4388-3752-4141-B313-1FDF9102B267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878D4388-3752-4141-B313-1FDF9102B267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AACD63E6-C9BA-4B66-80F0-BAAD26C402D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AACD63E6-C9BA-4B66-80F0-BAAD26C402D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AACD63E6-C9BA-4B66-80F0-BAAD26C402D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AACD63E6-C9BA-4B66-80F0-BAAD26C402D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F94B4D2-BD56-4D8D-A715-85C8F7423448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F94B4D2-BD56-4D8D-A715-85C8F7423448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F94B4D2-BD56-4D8D-A715-85C8F7423448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F94B4D2-BD56-4D8D-A715-85C8F7423448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4A58FF3-8617-420F-8E0A-E4DB5B50B684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A58FF3-8617-420F-8E0A-E4DB5B50B684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A58FF3-8617-420F-8E0A-E4DB5B50B684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A58FF3-8617-420F-8E0A-E4DB5B50B684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{370890A2-FBF0-4851-8CFD-C43851C0C83A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370890A2-FBF0-4851-8CFD-C43851C0C83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370890A2-FBF0-4851-8CFD-C43851C0C83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370890A2-FBF0-4851-8CFD-C43851C0C83A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4500C144-05C9-4C70-94AE-1CC0EE02E961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4500C144-05C9-4C70-94AE-1CC0EE02E961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4500C144-05C9-4C70-94AE-1CC0EE02E961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4500C144-05C9-4C70-94AE-1CC0EE02E961}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
