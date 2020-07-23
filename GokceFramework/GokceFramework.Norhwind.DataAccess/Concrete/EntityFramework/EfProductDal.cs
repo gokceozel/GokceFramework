@@ -12,7 +12,7 @@ namespace GokceFramework.Norhwind.DataAccess.Concrete.EntityFramework
 {
     public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, IProductDal
     {
-        public List<ProductDetail> GetListProductWithCategory()
+        public List<ProductDetail> GetProductDetails()
         {
 
             using (NorthwindContext context = new NorthwindContext())
@@ -31,5 +31,7 @@ namespace GokceFramework.Norhwind.DataAccess.Concrete.EntityFramework
                 return result;
             }
         }
+
+    
     }
 }
