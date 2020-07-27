@@ -14,6 +14,7 @@ namespace GokceFramework.Northwind.Business.Abstract
         Product GetById(int id);
         Product Add(Product product);
         Product Update(Product product);
+        void TransactionalOperation(Product p1,Product p2);
     }
 }
 

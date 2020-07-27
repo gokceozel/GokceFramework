@@ -1,4 +1,5 @@
-﻿using GokceFramework.Core.Aspects.Postsharp.ValidationAspects;
+﻿using GokceFramework.Core.Aspects.Postsharp.TransactionAspects;
+using GokceFramework.Core.Aspects.Postsharp.ValidationAspects;
 using GokceFramework.Norhwind.DataAccess.Abstract;
 using GokceFramework.Northwind.Business.Abstract;
 using GokceFramework.Northwind.Business.ValidationRules.FluentValidation;
@@ -34,6 +35,13 @@ namespace GokceFramework.Northwind.Business.Concrete.Manager
         public Product GetById(int id)
         {
             return _productDal.Get(x => x.ProductId == id);
+        }
+
+        [TransactionScopeAspect]
+        public void TransactionalOperation(Product p1, Product p2)
+        {
+            _productDal.Add(p1);
+            _productDal.Update(p2);
         }
 
         public Product Update(Product product)
