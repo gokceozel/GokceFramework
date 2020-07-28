@@ -26,7 +26,7 @@ namespace GokceFramework.Northwind.Business.Concrete.Manager
             return _productDal.Add(product);
         }
 
-     
+        //[CacheAspect()]
         public List<Product> GetAll()
         {
             return _productDal.GetList();
