@@ -1,5 +1,7 @@
-﻿using GokceFramework.Core.Aspects.Postsharp.TransactionAspects;
+﻿using GokceFramework.Core.Aspects.Postsharp.CacheAspects;
+using GokceFramework.Core.Aspects.Postsharp.TransactionAspects;
 using GokceFramework.Core.Aspects.Postsharp.ValidationAspects;
+using GokceFramework.Core.CrossCuttingConcerns.Caching.Microsoft;
 using GokceFramework.Norhwind.DataAccess.Abstract;
 using GokceFramework.Northwind.Business.Abstract;
 using GokceFramework.Northwind.Business.ValidationRules.FluentValidation;
@@ -20,13 +22,14 @@ namespace GokceFramework.Northwind.Business.Concrete.Manager
             _productDal = productDal;
         }
         [FluentValidationAspect(typeof(ProductValidatior))]
+        [CacheRemoveAspect(typeof(MemoryCacheManager))]
         public Product Add(Product product)
         {
 
             return _productDal.Add(product);
         }
 
-        //[CacheAspect()]
+        [CacheAspect(typeof(MemoryCacheManager))]
         public List<Product> GetAll()
         {
             return _productDal.GetList();

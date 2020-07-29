@@ -18,7 +18,7 @@ namespace GokceFramework.Core.CrossCuttingConcerns.Caching.Microsoft
                 return MemoryCache.Default;
             }
         }
-        public void Add(string key, object data, int cacheTime)
+        public void Add(string key, object data, int cacheTime=60)
         {
             if (data == null)
                 return;

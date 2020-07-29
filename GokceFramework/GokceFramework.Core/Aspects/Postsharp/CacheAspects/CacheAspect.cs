@@ -15,7 +15,7 @@ namespace GokceFramework.Core.Aspects.Postsharp.CacheAspects
         private Type _cacheType;
         private int _cacheByMinute;
         private ICacheManager _cacheManager;
-        public CacheAspect(Type cacheType,int cacheByMinute)
+        public CacheAspect(Type cacheType,int cacheByMinute=60)
         {
             _cacheType = cacheType;
             _cacheByMinute = cacheByMinute;
@@ -30,6 +30,20 @@ namespace GokceFramework.Core.Aspects.Postsharp.CacheAspects
             base.RuntimeInitialize(method);
         }
 
+        public override void OnInvoke(MethodInterceptionArgs args)
+        {
+            var methodName = string.Format("{0}.{1}.{2}",
+                args.Method.ReflectedType.Namespace,
+                args.Method.ReflectedType.Name,
+                args.Method.Name);
+
+            var arguments = args.Arguments.ToList();
+            var key = string.Format("{0}({1})",methodName ,
+               string.Join(",",arguments.Select(x=> x !=null ? x.ToString():"<NULL>")));
+            if (_cacheManager.IsAdd(key))
+                args.ReturnValue = _cacheManager.Get<object>(key);
+            _cacheManager.Add(key, args.ReturnValue, _cacheByMinute);
+        }
 
     }
 }
