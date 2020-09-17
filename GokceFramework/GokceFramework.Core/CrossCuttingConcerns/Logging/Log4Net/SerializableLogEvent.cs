@@ -1,9 +1,9 @@
-﻿using log4net.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using log4net.Core;
 
 namespace GokceFramework.Core.CrossCuttingConcerns.Logging.Log4Net
 {
