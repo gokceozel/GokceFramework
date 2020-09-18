@@ -33,5 +33,6 @@ namespace GokceFramework.Core.Aspects.Postsharp.TransactionAspects
         {
             ((TransactionScope)args.MethodExecutionTag).Dispose();
         }
+        
     }
 }

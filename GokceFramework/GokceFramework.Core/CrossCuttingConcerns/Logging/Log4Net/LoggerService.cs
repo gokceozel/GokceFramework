@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace GokceFramework.Core.CrossCuttingConcerns.Logging.Log4Net
 {
+    [Serializable]
     public class LoggerService
     {
-        private ILog _log;
+        public ILog _log;
         public LoggerService(ILog log)
         {
             _log = log;
