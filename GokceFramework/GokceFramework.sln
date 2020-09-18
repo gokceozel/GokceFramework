@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokceFramework.DataAccess.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokceFramework.Business.Tests", "GokceFramework.Business.Tests\GokceFramework.Business.Tests.csproj", "{4500C144-05C9-4C70-94AE-1CC0EE02E961}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokceFramework.MvcWeb", "GokceFramework.MvcWeb\GokceFramework.MvcWeb.csproj", "{C0E64CB7-EC80-4448-88D7-162B4DBA7A2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokceFramework.MvcWeb.Tests", "GokceFramework.MvcWeb.Tests\GokceFramework.MvcWeb.Tests.csproj", "{D21F8BCA-E837-4F11-A458-9FD9003FD88B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{4500C144-05C9-4C70-94AE-1CC0EE02E961}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4500C144-05C9-4C70-94AE-1CC0EE02E961}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4500C144-05C9-4C70-94AE-1CC0EE02E961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E64CB7-EC80-4448-88D7-162B4DBA7A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E64CB7-EC80-4448-88D7-162B4DBA7A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E64CB7-EC80-4448-88D7-162B4DBA7A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E64CB7-EC80-4448-88D7-162B4DBA7A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D21F8BCA-E837-4F11-A458-9FD9003FD88B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D21F8BCA-E837-4F11-A458-9FD9003FD88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D21F8BCA-E837-4F11-A458-9FD9003FD88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D21F8BCA-E837-4F11-A458-9FD9003FD88B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
