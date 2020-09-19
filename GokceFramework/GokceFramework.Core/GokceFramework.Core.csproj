@@ -94,6 +94,7 @@
     <Compile Include="DataAccess\NHibarnate\NhRepositoryBase.cs" />
     <Compile Include="Entities\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Mvc\Infrastructure\NinjectControllerFactory.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
